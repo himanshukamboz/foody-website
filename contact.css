@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter" ,sans-serif;
+    
+}
+.formparent{
+    height: 100%;
+}
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    width:60vw;
+    height: 95vh;
+    margin: 2px auto;
+    margin-block-start:30px;
+    box-shadow: 10px 2px 10px 0px #0006;
+    padding:30px;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.contact-us-form > h2{
+    text-align: center;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+form>div>input{
+    width:45%;
+    height: 40px;
+    border:2px solid black;
+    padding:20px;
+    border-radius: 12px;
+}
+#name{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.name{
+    width: 50%;
+}
+#firstname{
+    width: 88%;
+    height: 40px;
+    border:2px solid black;
+    padding: 20px;
+    border-radius: 12px;
+}
+textarea{
+    min-height: 150px;
+    height: 100%;
+    border:2px solid black;
+    padding: 2px 20px;
+    border-radius: 12px;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; 
+}
+.custom-placeholder::placeholder{
+    text-align: center;
+    line-height: 150px;
+}
+.error{
+    color:red;
+}
+
+.about-container{
+    max-width: 1400px;
+    margin: auto;
+    padding-inline:10vw;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.line{
+    width:70px;
+    height: 4px;
+    background-color: black;
+}
+.personal-info{
+    display:flex;
+    gap:3%;
+    align-items: center;
+}
+.myimg{
+    border-radius: 25%;
+    max-width: 87px;
+    overflow: hidden;
+}
+
+.myimg>img{
+    width:86px;
+    
+}
+.about-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+.myname>p{
+    color:grey;
+}
+form>button{
+    width:17rem;
+    background-color: aliceblue;
+    border: none;
+    padding: 10px;
+    margin: auto;
+}
+@media (max-width:620px) {
+*{
+    font-size: 12px;
+}
+ .contact-us-form{
+    justify-content: center;
+    width:80%;
+ }
+ form>div{
+    gap:5px;
+ }
+  #name{
+    flex-direction: column;
+    gap:14px;
+  }
+  .name{
+    width:78%;
+  }
+  form>div>input{
+    width:75%;
+  }  
+  #firstname{
+    width: 75%;
+    height:20px;
+    padding:17px;
+  }
+}
