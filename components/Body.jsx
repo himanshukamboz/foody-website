@@ -16,7 +16,7 @@ const Body = () => {
   const fetchdata = async () => {
     try {
       let res = await fetch(
-        "https://proxy.cors.sh/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.960059122809971&lng=77.57337538383284&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        "https://thingproxy.freeboard.io/fetch/https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.960059122809971&lng=77.57337538383284&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       let json = await res.json();
       
